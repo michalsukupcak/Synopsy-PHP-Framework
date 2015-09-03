@@ -1,0 +1,88 @@
+/*
+ * Synopsy PHP Framework (c) by Webdesign Studio s.r.o.
+ * 
+ * Synopsy PHP Framework is licensed under a
+ * Creative Commons Attribution 4.0 International License.
+ *
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
+ *
+ * Any files in this application that are NOT marked with this disclaimer are
+ * not part of the framework's open-source implementation, the CC 4.0 licence
+ * does not apply to them and are protected by standard copyright laws!
+ */
+
+/*
+ * @author Michal Sukupčák <sukupcak@webdesign-studio.sk>
+ */
+
+/* -------------------------------------------------------------------------- */
+/* --- Body & wrapper --- */
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+/* Noscript warning */
+noscript {
+    border: 5px solid red;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #666;
+    display: block;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    text-align: center;
+}
+noscript div:first-child {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* Loading overlay */
+#loading {
+    background: rgba(0,0,0,.6);
+    display: none;
+    height: 100%;
+    left: 0;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+}
+#loading div {
+    box-shadow: 2px 2px 2px #666;
+    height: 128px;
+    left: 50%;
+    margin-left: -64px;
+    margin-top: -64px;
+    position: absolute;
+    top: 50%;
+    width: 128px;
+}
+#loading div img {
+    max-width: 100%;
+}
+
+/* Modal */
+#modal .modal-header.has-error {
+    background: #990000;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+#modal .modal-header.has-warning {
+    background: #e38d13;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+#modal .modal-header.has-success {
+    background: #5cb85c;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+
+/* Wrapper */
+#wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}

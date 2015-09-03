@@ -1,0 +1,69 @@
+/*
+ * Synopsy PHP Framework (c) by Webdesign Studio s.r.o.
+ * 
+ * Synopsy PHP Framework is licensed under a
+ * Creative Commons Attribution 4.0 International License.
+ *
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
+ *
+ * Any files in this application that are NOT marked with this disclaimer are
+ * not part of the framework's open-source implementation, the CC 4.0 licence
+ * does not apply to them and are protected by standard copyright laws!
+ */
+
+/*
+ * @author Michal Sukupčák <sukupcak@webdesign-studio.sk>, <michal.sukupcak@gmail.com>
+ */
+
+/* -------------------------------------------------------------------------- */
+/* --- Common classes --- */
+
+.hidden { visibility: hidden; }
+.none { display: none; }
+
+/* -------------------------------------------------------------------------- */
+/* --- File inputs --- */
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- Responsive text align classes --- */
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.hidden-overflow { overflow: hidden; }
+
+@media (min-width: 768px) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+}
+@media (min-width: 992px) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+}
+@media (min-width: 1200px) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+}

@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+}
+
+#wrapper {
+    color: #6E787E;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#topBlue {
+    background: #1E86BD;
+    height: 5px;
+}
+#topGreen {
+    background: #96CB1B;
+    height: 5px;
+}
+
+#email {
+    padding: 5px 0;
+}
+#email a {
+    color: #6E787E;
+    font-size: .9em;
+}
+
+#logo {
+    margin: 20px 0;
+}
+#logo img {
+    max-width: 100%;
+}
+
+#title {
+    background: #F7F7F7;
+    border-top: 1px solid #DBDBDB;
+    padding: 20px 0 40px 0;
+}
+#title h1 {
+    color: #333;
+}
+
+nav {
+    margin: 10px 0 0 0;
+}
+nav a {
+    background: white;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px #999;
+    color: #333;
+    display: inline-block;
+    margin: 5px 3px;
+    padding: 5px 10px;
+}
+nav a:hover {
+    border-color: #999;
+    box-shadow: 2px 2px 2px #666;
+    text-decoration: none;
+}
+
+#contentWrapper {
+    padding: 10px 0 30px 0;
+}
+
+#footerWrapper {
+    background: #1A1A1A;
+    border-top: 5px solid #96CB1B;
+    font-size: .9em;
+    margin: 0 0 -999999px 0;
+    padding: 20px 0 999999px 0;
+}
+#footerWrapper hr {
+    border-top: 1px solid #333;
+    width: 80%;
+}
+#footerWrapper a {
+    color: #96CB1B;
+}
+#footerWrapper img {
+    margin: 20px 0 0 0;
+}
+#footerWrapper #copyright {
+    margin: 20px 0;
+}

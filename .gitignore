@@ -1,0 +1,7 @@
+.idea/*
+cache/*
+data/files/documents/*
+data/files/images/*
+resources/plugins/smarty/dirs/templates_c/*
+src/compilers/backup/*
+src/compilers/tmp/*

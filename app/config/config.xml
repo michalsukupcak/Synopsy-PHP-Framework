@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+    Synopsy PHP Framework (c) by Webdesign Studio s.r.o.
+
+    Synopsy PHP Framework is licensed under a
+    Creative Commons Attribution 4.0 International License.
+
+    You should have received a copy of the license along with this
+    work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
+
+    Any files in this application that are NOT marked with this disclaimer are
+    not part of the framework's open-source implementation, the CC 4.0 licence
+    does not apply to them and are protected by standard copyright laws!
+    
+-->
+
+<!-- @author Michal Sukupčák <sukupcak@webdesign-studio.sk> -->
+
+<!-- Configuration -->
+<!-- Synopsy PHP Framework main configuration XML file -->
+<configuration>
+    
+    <!-- System -->
+    <!-- Basic settings and switches for framework -->
+    <system>
+        <name>Synopsy PHP Framework</name>
+        <version>4.7</version>
+        <codename>Dramatic Durian</codename>
+    </system>
+
+    <!-- Website -->
+    <!-- Information about website that is created using this framework -->
+    <website>
+        <name>Synopsy PHP Framework</name>
+        <email>synopsy@webdesign-studio.sk</email>
+    </website>
+    
+    <!-- Compilers -->
+    <!-- Compilers settings -->
+    <compilers>
+        <css>On</css>
+        <js>On</js>
+        <entities>On</entities>
+        <controllers>On</controllers>
+        <apis>On</apis>
+    </compilers>
+    
+    <!-- Database -->
+    <!-- Connection settings for database server, supply names of properly set up *.ini files in folder /app/config/db -->
+    <database>
+        <local>local</local>
+        <remote>remote</remote>
+    </database>
+    
+    <!-- Email -->
+    <!-- Settings for SMTP email server connection, supply name of properly set up *.ini file in folder /app/config/email -->
+    <email>smtp</email>
+    
+    <!-- Languages -->
+    <!-- List of languages used in the application -->
+    <languages>
+        <language code="en" name="English"/>
+        <language code="sk" name="Slovenčina"/>
+    </languages>
+    
+    <!-- Routing -->
+    <!-- Configuration of URL routing, routers must be a file from folder /src/lib/routers -->
+    <routing>
+        <syncRouter>SyncRouter</syncRouter>
+        <ajaxRouter>AjaxRouter</ajaxRouter>
+        <restRouter>RestRouter</restRouter>
+    </routing>
+
+    <!-- User roles -->    
+    <!-- List of user roles for Authentication module, jwtKey: server key for JWT encoding, jwtExpires: time for which a token is valid (in seconds), 0 = valid forever -->
+    <auth>
+        <roles>
+            <role>user</role>
+            <role>admin</role>
+        </roles>
+        <jwtKey>DEMO_SERVER_KEY</jwtKey>
+        <jwtExpires>0</jwtExpires>
+    </auth>
+    
+    <!-- Plugins -->
+    <!-- List of js/css plugins that are included in HTML code of website -->
+    <plugins>
+	<plugin name="jquery">
+	    <file type="js" src="resources/plugins/jquery/jquery-2.0.3.min.js"/>
+	</plugin>
+	<plugin name="jquery-ui">
+	    <file type="css" src="resources/plugins/jquery-ui/theme/smoothness/jquery-ui-1.10.3.custom.min.css"/>
+	    <file type="js" src="resources/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"/>
+	</plugin>
+	<plugin name="bootstrap">
+	    <file type="js" src="resources/plugins/bootstrap/js/bootstrap.min.js"/>
+	    <file type="css" src="resources/plugins/bootstrap/css/bootstrap.min.css"/>
+	    <file type="css" src="resources/plugins/bootstrap/css/bootstrap-theme.min.css"/>
+	</plugin>
+	<plugin name="font-awesome">
+	    <file type="css" src="resources/plugins/font-awesome/css/font-awesome.min.css"/>
+	</plugin>
+        <!--
+	<plugin name="royalslider">
+	    <file type="css" src="resources/plugins/royalslider/royalslider.css"/>
+	    <file type="css" src="resources/plugins/royalslider/skins/default/rs-default.css"/>
+	    <file type="js" src="resources/plugins/royalslider/jquery.royalslider.min.js"/>
+	</plugin>
+        -->
+    </plugins>
+                
+</configuration>
